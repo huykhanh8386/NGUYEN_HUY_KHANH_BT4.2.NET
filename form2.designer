@@ -1,0 +1,66 @@
+namespace CourseRegistration
+{
+partial class Form1
+{
+private System.ComponentModel.IContainer components=null;
+private System.Windows.Forms.TextBox txtName;
+private System.Windows.Forms.MaskedTextBox mtxtPhone;
+private System.Windows.Forms.DateTimePicker dtpBirthDate;
+private System.Windows.Forms.ComboBox cboCourse;
+private System.Windows.Forms.RadioButton rdoMale;
+private System.Windows.Forms.RadioButton rdoFemale;
+private System.Windows.Forms.CheckBox chkProgramming;
+private System.Windows.Forms.CheckBox chkSport;
+private System.Windows.Forms.Button btnRegister;
+private System.Windows.Forms.Label lblName;
+
+private void InitializeComponent()
+{
+txtName=new System.Windows.Forms.TextBox();
+mtxtPhone=new System.Windows.Forms.MaskedTextBox();
+dtpBirthDate=new System.Windows.Forms.DateTimePicker();
+cboCourse=new System.Windows.Forms.ComboBox();
+rdoMale=new System.Windows.Forms.RadioButton();
+rdoFemale=new System.Windows.Forms.RadioButton();
+chkProgramming=new System.Windows.Forms.CheckBox();
+chkSport=new System.Windows.Forms.CheckBox();
+btnRegister=new System.Windows.Forms.Button();
+lblName=new System.Windows.Forms.Label();
+
+lblName.Text="Họ tên";
+lblName.Location=new System.Drawing.Point(20,20);
+
+txtName.Location=new System.Drawing.Point(100,20);
+txtName.Name="txtName";form
+
+mtxtPhone.Location=new System.Drawing.Point(100,60);
+dtpBirthDate.Location=new System.Drawing.Point(100,100);
+cboCourse.Location=new System.Drawing.Point(100,140);
+
+rdoMale.Text="Nam";
+rdoMale.Location=new System.Drawing.Point(100,180);
+
+rdoFemale.Text="Nữ";
+rdoFemale.Location=new System.Drawing.Point(170,180);
+
+chkProgramming.Text="Lập trình";
+chkProgramming.Location=new System.Drawing.Point(100,220);
+
+chkSport.Text="Thể thao";
+chkSport.Location=new System.Drawing.Point(100,250);
+
+btnRegister.Text="Đăng ký";
+btnRegister.Location=new System.Drawing.Point(100,290);
+btnRegister.Click += new System.EventHandler(btnRegister_Click);
+
+this.Load += new System.EventHandler(Form1_Load);
+
+Controls.AddRange(new System.Windows.Forms.Control[]{
+lblName,txtName,mtxtPhone,dtpBirthDate,cboCourse,
+rdoMale,rdoFemale,chkProgramming,chkSport,btnRegister});
+
+this.Text="Course Registration";
+this.ClientSize=new System.Drawing.Size(400,350);
+}
+}
+}
